@@ -1,0 +1,3 @@
+**.log
+openllms/**/*.gguf
+openllms/**/*.llamafile

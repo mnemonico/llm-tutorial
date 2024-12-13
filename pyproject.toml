@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "core"
+version = "0.1.0"
+description = ""
+authors = ["abaiz <b.mohamedachraf@gmail.com>"]
+readme = "README.md"
+packages = [{include = "core", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.55.3"
+langchain = "^0.3.9"
+langchain-community = "^0.3.8"
+numexpr = "^2.10.2"
+pandas = "^2.2.3"
+langchain-experimental = "^0.3.3"
+langchain-openai = "^0.2.10"
+tabulate = "^0.9.0"
+jupyterlab = "^4.3.1"
+pypdf = "^5.1.0"
+filelock = "^3.16.1"
+langchain-text-splitters = "^0.3.2"
+langchain-chroma = "^0.1.4"
+langgraph = "^0.2.53"
+
+[tool.poetry.group.lint.dependencies]
+black = {extras = ["jupyter"], version = "^24.10.0"}
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
